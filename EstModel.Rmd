@@ -1,0 +1,43 @@
+---
+title: "Untitled"
+author: "Harley Clifton"
+date: "2022-12-07"
+output:
+  pdf_document: default
+  word_document: default
+---
+
+## Final Theorhetical Model
+
+$DeathRate_{ij} =  \beta_0  +  \beta_1  Physician Rate_{ij}  +  \beta_2  Income_{ij} +  \beta_3  PercentAge5to14_{ij} +  \beta_4  PercentAge15to24_{ij}$
+
+$+  \beta_5  PercentAge25to34_{ij} +  \beta_6  PercentAge35to44_{ij}  +  \beta_7  PercentAge45to54_{ij} +  \beta_8  PercentAge55to64_{ij}$
+
+$+  \beta_9  PercentAge65to74_{ij}  +  \beta_{10}  PercentAge75plus_{ij}  +  \beta_{11} PercentAfricanAmerican_{ij} +  \beta_{12}  PercentAsian_{ij}$
+
+$+  \beta_{13}  PercentHispanicOrLatino_{ij} +  \beta_{14}  PhysicianRate_{ij} : PercentAfricanAmerican_{ij}$
+
+$+  \beta_{15}  PhysicianRate_{ij} : PercentHispanicOrLatino_{ij} + \beta_{16} PhysicianRate_{ij} : Income_{ij} + \underline{\smash{\beta_{17}}} X_{State_{ij}} + \epsilon_{ij}$
+
+$\epsilon_{ij} \sim N(0, \sigma^2 |PercentAge25to34_{ij}|^{2 \delta})$
+
+
+
+
+## Final Estimated Model
+
+$\widehat{DeathRate_{ij}} =  39.71716  -  0.00210  Physician Rate_{ij}  -  0.00011  Income_{ij}$
+
+$-  0.44548  PercentAge5to14_{ij}  -  0.39574  PercentAge15to24_{ij}  -  0.38688  PercentAge25to34_{ij}$
+
+$-  0.33072  PercentAge35to44_{ij}  -  0.35441  PercentAge45to54_{ij}  -  0.15201  PercentAge55to64_{ij}$
+
+$-  0.26820  PercentAge65to74_{ij}  +  0.39235  PercentAge75plus_{ij}  +  0.01682  PercentAfricanAmerican_{ij}$
+
+$-  0.05235  PercentAsian_{ij}  -  0.04246  PercentHispanicOrLatino_{ij}$
+
+$+  0.000013  PhysicianRate_{ij} : PercentAfricanAmerican_{ij}$
+
+$+  0.000038  PhysicianRate_{ij} : PercentHispanicOrLatino_{ij}  +  0.000000061  PhysicianRate_{ij} : Income_{ij}$
+
+$\epsilon_{ij} \sim N(0, \sigma^2$ x $|PercentAge25to34_{ij}|^{2(-1.217987)})$
