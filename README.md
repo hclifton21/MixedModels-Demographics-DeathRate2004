@@ -1,5 +1,7 @@
 # MixedModels-Demographics-DeathRate2004
 
+Authors: Harley Clifton, Madelaine Brown, and Jordyn Lucier
+
 ## Overview
 Human Demographic Contributions to the 2004 Death Rate by U.S. State and County modeled with a Random Intercept Mixed Model
 
